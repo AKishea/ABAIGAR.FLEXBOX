@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>FLEXBOX1</title>
-    <link rel="stylesheet" href="style3.css">
+    <title>FLEXBOX4</title>
+    
 </head>
 <style>
     * {
@@ -49,7 +49,7 @@ nav {
 }
 
 .redrectangle {
-    background: red;
+    background: blue;
     height: 25px;
     width: 60px;
 }
@@ -65,37 +65,31 @@ nav {
 main {
     display: flex;
     flex-grow: 1;
-    padding: 4px;
+    padding: 20px;
     gap: 4px;
-    flex-direction: column;
-    width:75% ;
+    justify-content: center;
+    justify-content: space-evenly;
 }
+.outer-box {
+            width: 30%;
+            height: 200px;
+            border: 1px solid black;
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            box-sizing: border-box;
+        }
 
-    .box1 {
-      display: flex;
-      flex-wrap: wrap;
-      border: 1px solid black;
-      gap: 4px;
-      padding: 4px;
-    
-    }
+        .text-above {
+            font-size: 16px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
 
-   
-
-    .box2 {
-      display: flex;
-      gap: 10px;
-      justify-content: space-between;
-      border: 1px solid black;
-      padding: 10px;
-      
-    }
-    .mediumboxes {
-      border: 1px solid black;
-      height: 150px;
-      width: 200px;
-    }
-
+        .inner-box {
+            height: 100%;
+            border: 1px solid black;
+        }
 
 
 aside {
@@ -114,8 +108,8 @@ aside {
 
 .smallboxes {
     border: 1px solid black;
-    height: 80px;
-    width: 80px;
+    height: 90px;
+    width: 90px;
 }
 
 .bigbox {
@@ -172,29 +166,15 @@ footer {
     </nav>
     <div class="content">
         <main>
-            <div class="box1">
-              <div class="smallboxes"></div>
-              <div class="smallboxes"></div>
-              <div class="smallboxes"></div>
-              <div class="smallboxes"></div>
-              <div class="smallboxes"></div>
-              <div class="smallboxes"></div>
-              <div class="smallboxes"></div>
-              <div class="smallboxes"></div>
-              <div class="smallboxes"></div>
-              <div class="smallboxes"></div>
-              <div class="smallboxes"></div>
-              <div class="smallboxes"></div>
-              <div class="smallboxes"></div>
-              <div class="smallboxes"></div>
-              <div class="smallboxes"></div>
-            
+            <div class="outer-box">
+                <div class="text-above">Main box 1</div>
+                <div class="inner-box"></div>
             </div>
-            <div class="box2">
-              <div class="mediumboxes"></div>
-              <div class="mediumboxes"></div>
-              <div class="mediumboxes"></div>
+            <div class="outer-box">
+                <div class="text-above">Main box 1</div>
+                <div class="inner-box"></div>
             </div>
+           
           </main>
         <aside>
             <div class="asidebox"></div>
